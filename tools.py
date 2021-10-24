@@ -281,15 +281,19 @@ if __name__ == '__main__':
     # imageRename2(imagePath)
 
     # 间隔固定行删除照片
+    # imgPath = '/home/idriver/idriver_data/ImageBirdEye/CS55yuanqu_211021_deleted/'
+    # inter = 5
+    # deletImgInter(imgPath, inter)
+
     imgPath = '/home/idriver/idriver_data/ImageBirdEye/CS55yuanqu_211021_deleted/'
     inter = 5
     deletImgInter(imgPath, inter)
 
     # 裁剪图片指定区域
-    # imgSrcPath = 'D:/YanXu/ESRGAN/Pseudo_IR_TrainData/Pseudo_Image_JET/'
-    # imgSavePath = 'D:/YanXu/ESRGAN/Pseudo_IR_TrainData/Pseudo_Image_JET_Cuted/'
-    # x, y, h, w = 80, 320, 480, 640 #指定需要裁减的区域
-    # cutImage(imgSrcPath, imgSavePath, x, y, h, w)
+    imgSrcPath = 'D:/YanXu/ESRGAN/Pseudo_IR_TrainData/Pseudo_Image_JET/'
+    imgSavePath = 'D:/YanXu/ESRGAN/Pseudo_IR_TrainData/Pseudo_Image_JET_Cuted/'
+    x, y, h, w = 80, 320, 480, 640 #指定需要裁减的区域
+    cutImage(imgSrcPath, imgSavePath, x, y, h, w)
 
     # # 图像重命名，减去较小数字并加上时间
     # imageSrcPath = 'D:/YanXu/ESRGAN/Pseudo_IR_TrainData/VI_Image/'
